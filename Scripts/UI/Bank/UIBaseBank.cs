@@ -27,9 +27,8 @@ namespace MultiplayerARPG
         {
             if (uiDepositInput == null)
                 return;
-
-            if (uiDepositInput == null)
-                uiDepositInput.SetupForIntegerInput(OnDepositConfirm, 0, null, 0);
+                
+            uiDepositInput.SetupForIntegerInput(OnDepositConfirm, 0, null, 0);
             if (uiDepositInput.uiInputField != null)
             {
                 uiDepositInput.uiInputField.onValueChanged.RemoveListener(OnDepositValueChangedProceeding);

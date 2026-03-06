@@ -43,6 +43,7 @@ namespace MultiplayerARPG
             LiteNetLibBehaviour.CacheElementsAndRpcs(typeof(PlayerCharacterNpcActionComponent));
             LiteNetLibBehaviour.CacheElementsAndRpcs(typeof(PlayerCharacterPkComponent));
             LiteNetLibBehaviour.CacheElementsAndRpcs(typeof(PlayerCharacterVendingComponent));
+            LiteNetLibBehaviour.CacheElementsAndRpcs(typeof(LiteNetLibTransform));
             // Cache DevExt
             DevExtUtils.CacheInstanceDevExtMethods(typeof(PlayerCharacterEntity), "Awake");
             DevExtUtils.CacheInstanceDevExtMethods(typeof(PlayerCharacterEntity), "OnDestroy");

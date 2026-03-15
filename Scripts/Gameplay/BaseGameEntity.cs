@@ -278,7 +278,7 @@ namespace MultiplayerARPG
                 return;
             if (!IsServer)
                 return;
-            SendServerState(Manager.LocalTick);
+            SendServerState(Manager.ServerTimestamp);
         }
 
         private void OnTickClient(LogicUpdater updater)
@@ -289,7 +289,7 @@ namespace MultiplayerARPG
                 return;
             if (!IsOwnerClient)
                 return;
-            SendClientState(Manager.LocalTick);
+            SendClientState(Manager.ServerTimestamp);
         }
 
         private void OnDestroy()
